@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+	<title>Admin Section</title>
+	 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/JSFiles/backButton.js"></script>
+    <!-- Custom styles for this template 
+   -->
+    <link href="css/full.css" rel="stylesheet">
+	<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</head>
+<body style = "background-color:lightgrey" >
+
+<div class="container">
+
+  <!-- Navivation Bar -->
+  <!--<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <a class="navbar-brand" >Admin Registration Form </a>
+    </div>
+   </div>
+</nav>
+-->
+<div class="row" style="background-color:black">
+  <div class="col-md-12">
+	<a class="navbar-brand" >Admin Registration Form </a>
+</div>
+</div>
+<div class="row" style="background-color:lightblue">
+  <div class="col-md-12">
+	  
+  <form class="form-horizontal" method="POST" action="../routers/register">
+  <fieldset>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label"  for="username">Username</label>
+      <div class="controls">
+        <input type="text" id="username" name="username" placeholder="Enter User name..." class="input-xlarge" style="width:240px">
+        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+      </div>
+    </div>
+	    <div class="control-group">
+      <!-- Contact number -->
+      <label class="control-label"  for="contactnm">Contact Number:</label>
+      <div class="controls">
+        <input type="text" id="contactnm" name="contactnm" placeholder="Enter Contact Number..." class="input-xlarge" style="width:240px">
+        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- E-mail -->
+      <label class="control-label" for="email">E-mail</label>
+      <div class="controls">
+        <input type="email" id="email" name="email" placeholder="Enter Email..." class="input-xlarge" style="width:240px">
+        <p class="help-block">Please provide your E-mail</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Password</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="Enter Password..." class="input-xlarge" style="width:240px">
+        <p class="help-block">Password should be at least 4 characters</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password -->
+      <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+      <div class="controls">
+        <input type="password" id="password_confirm" name="password_confirm" placeholder="Confirm Passwprd..." class="input-xlarge" style="width:240px">
+        <p class="help-block">Please confirm password</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+       <button type="submit" class="btn btn-success" style = "width:250px;">Register</button>
+	   <button type="button" class="btn btn-success" style = "width:250px;" onClick ="goBack()">Go Back</button>
+	  </div>
+    </div>
+  </fieldset>
+</form>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

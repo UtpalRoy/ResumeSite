@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FullStack Developer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="../js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/full.css" rel="stylesheet">
+	<style>
+
+.contactMe{
+	background-color: powderblue;
+}
+</style>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../Pages/AboutMe.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="../Pages/EducationDetails.html">Education Details</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="../Pages/ProfessionalExp.html">Education Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	<!-- Page Content -->
+	<div class="card" style="width: 80rem; height:40rem;">
+  
+  <div class="card-body">
+    
+ <form action="/routers/contact" method="POST">
+   <div class="form-group">
+    <label for="exampleInputEmail1">Subject Line</label>
+    <input type="text" class="form-control" id="subject" name ="subject" aria-describedby="emailHelp" placeholder="Enter subject">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Reason for Contact</label>
+    <textarea class="form-control" id="desc" name="desc" rows="3" placeholder="Enter Reason for Contact"></textarea>
+	<!--<input type="text" class="form-control" id="desc" name="desc" aria-describedby="emailHelp" placeholder="Enter email">-->
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  
+  </div>
+</div>
+	
+	
+	<div className="contactMe"id="contactme-table">
+	
+
+  </div>
+ 
+	</div>
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

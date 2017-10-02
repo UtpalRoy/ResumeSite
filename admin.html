@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+	<title>Admin Section</title>
+	 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<script src="/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template 
+    <link href="css/full.css" rel="stylesheet">-->
+
+</head>
+<body style = "background-color:lightgrey">
+
+<div class="container">
+  <!-- Navivation Bar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header" style = "width:250px;">
+      <a class="navbar-brand" ><font color="white">Admin Login Form</font> </a>
+    </div>
+ </div>
+</nav>
+  <form action="./routers/login" method="POST">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style = "width:500px;">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" style = "width:500px;">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-success" style = "width:250px;">Login</button>
+	<a href="./Pages/Register.html"><button type="button" class="btn btn-success" style = "width:250px;">Register</button></href>
+  </form>
+</div>
+
+</body>
+</html>
